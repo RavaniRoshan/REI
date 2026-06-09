@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# REI generated data
+rei/data/commits.db
+rei/data/static_graph.json
+rei/data/coupling_graph.json
+rei/data/eval_results/
+rei/data/tmp/
+
+# Dependency files
+node_modules/
