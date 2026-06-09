@@ -1,0 +1,99 @@
+site_name: REI - Repository Evolution Intelligence
+site_url: https://ravaniroshan.github.io/REI
+repo_url: https://github.com/RavaniRoshan/REI
+docs_dir: docs
+site_dir: site
+edit_uri: ''
+
+nav:
+  - Home: index.md
+  - Introduction:
+      - Why REI?: introduction/motivation.md
+      - Quick Start: introduction/quick-start.md
+  - Architecture:
+      - Overview: architecture/overview.md
+      - Static Graph: architecture/static-graph.md
+      - Coupling Graph: architecture/coupling-graph.md
+      - Prediction Engine: architecture/prediction-engine.md
+  - Evaluation:
+      - Methodology: evaluation/methodology.md
+      - Results: evaluation/results.md
+      - Ablation: evaluation/ablation.md
+  - CLI:
+      - Commands: cli/commands.md
+      - Config: cli/configuration.md
+  - Development:
+      - Contributing: development/contributing.md
+      - Project Structure: development/project-structure.md
+
+theme:
+  name: material
+  language: en
+
+  font:
+    text: Inter
+    code: Fira Code
+  palette:
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - toc.integrate
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.blocks.admonition
+  - pymdownx.blocks.tab
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      title: On this page
+  - admonition
+  - tables
+  - def_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search:
+      separator: '[\\s\\-]'
+      lang:
+        - en
+
+extra_css:
+  - stylesheets/extra.css
